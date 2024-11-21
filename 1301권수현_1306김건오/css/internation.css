@@ -1,0 +1,246 @@
+#header{
+    /* width: 1200px; */
+    height:100px;
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: white;
+}
+
+#nav{
+    height: 70px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#container {
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid #ff0000; */
+}
+
+
+.menubar {
+    display: flex;
+    /* margin: 10px; */
+    text-align: center;
+    font-weight: bold;
+    /* background-color:rgb(120, 214, 139); */
+}
+
+.contents_list{
+    list-style-type: none;
+}
+#title{ /*제목 박스 */
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    width: 847px;
+    height:100px;
+    /* border-top: 1px solid #000000; */
+    /* border-right: 1px solid #000000; */
+    float:left;
+    border: 1px solid;
+}
+
+.title_text{ /* 제목의 글자 위치 조정*/
+    position: absolute;
+    top:210px;
+    left:350px;
+}
+
+#title2{ /* 제목 박스*/
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    width: 850px;
+    height:100px;
+    /* border-top: 1px solid #000000; */
+    float:right;
+    border: 1px solid;
+}
+.title2_text{ /* 제목의 글자 위치 조정*/
+    position: absolute;
+    top:210px;
+    right:220px;
+}
+
+.menubar {  /* 메뉴 바 정렬 */
+    display: flex;
+    /* margin: 10px; */
+    text-align: center;
+    font-weight: bold;
+    /* background-color:rgb(120, 214, 139); */
+}
+
+.table_title{ 
+    background-color: rgba(0, 255, 0, 0.38);
+}
+
+th, td{ /* 행과 열의 보더 적용*/
+    border: 1px solid black;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 14px;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 100;
+}
+
+h3{
+    color:darkgreen;
+}
+
+.menubar {
+    display: flex;
+    /* margin: 10px; */
+    text-align: center;
+    font-weight: bold;
+    /* background-color:rgb(120, 214, 139); */
+}
+
+.menus {
+    width: 300px;
+    height: 70px;
+    /* border: 1px solid; */
+    margin-left: 10px;
+    margin: auto;
+    font-size:18px;
+}
+
+.article_title{
+    font-size: x-large;
+}
+
+.menu{
+    font-size: 23px;
+    font-weight: 100;
+    height: 50px;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    transition: all 0.3s;
+}
+
+/* 메뉴바 클릭시 글씨 색과 두께, 언더바 색과 두께 바뀜, */
+.menu:hover{
+    color :rgb(18, 70, 42);
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom: 3px solid rgb(18, 70, 42);
+}
+
+.request{
+    font-size: larger;
+    position: absolute;
+    top:27px;
+    right:340px;
+    font-weight: bold;
+    color: gray;
+}
+
+a:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+.underbar{
+    display: flex;
+}
+
+.bars{
+    width: 200px;
+    float:left;
+}
+
+#logo{
+    width:100px;
+    height:100px;
+    /* border: 1px solid rebeccapurple; */
+}
+
+input{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    right:100px;
+    top:30px;
+}
+
+#footer{
+    background-color: gray;
+    color:whitesmoke;
+    clear:both
+}
+
+.underbar{
+    display: flex;
+}
+
+.bars{
+    width: 200px;
+    /* float:left; */
+}
+table {
+  border-collapse: collapse;
+  border: 0;
+}
+th,
+td {
+  border: 1px solid #aaa;
+  background-clip: padding-box;
+  scroll-snap-align: start;
+}
+tbody tr:last-child th,
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+thead {
+  z-index: 1000;
+  position: relative;
+}
+th,
+td {
+  padding: 0.6rem;
+  min-width: 6rem;
+  text-align: left;
+  margin: 0;
+}
+thead th {
+  position: sticky;
+  top: 0;
+  border-top: 0;
+  background-clip: padding-box;
+}
+thead th.pin {
+  left: 0;
+  z-index: 1001;
+  border-left: 0;
+}
+tbody th {
+  background-clip: padding-box;
+  border-left: 0;
+}
+tbody {
+  z-index: 10;
+  position: relative;
+}
+tbody th {
+  position: sticky;
+  left: 0;
+}
+thead th,
+tbody th {
+  background-color: #f8f8f8;
+}
+
