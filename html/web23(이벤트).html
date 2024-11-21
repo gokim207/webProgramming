@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 500px;
+            margin:auto;
+            position: relative;
+        }
+        .imgOnButton{
+            position: absolute;
+            left:10px;
+            bottom:10px;
+        }
+        .content1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="wrap">
+        <img src="/images/flower.jpg">
+        <button class="imgOnButton" id="buttonA" onclick="show_con()">상세 설명 보기</button>
+        <div id="content">
+            <h4>등심붓꽃</h4>
+            <p>북아메리카 원산으로 케인 코에서....</p>
+            <button onclick="hid_con()">상세 설명 닫기</button>
+        </div>
+    </div>
+    <script>
+        function show_con(){
+            document.querySelector('#content').style.display='block';
+            document.querySelector("#buttonA").style.display='none';
+        }
+        function hid_con(){
+            document.querySelector('#content').style.display='none';
+            document.querySelector("#buttonA").style.display='block';
+        }
+    </script> -->
+    <div id="wrap">
+        <img src="/images/flower.jpg">
+        <button class="imgOnButton" id="buttonA">상세 설명 보기</button>
+        <div id="content" class="content1">
+            <h4>등심붓꽃</h4>
+            <p>북아메리카 원산으로 케인 코에서....</p>
+            <button id="buttonB">상세 설명 닫기</button>
+        </div>
+    </div>
+    <script>
+        let openbut = document.querySelector('#buttonA')
+        openbut.onclick = show_con;
+        
+        let closebut = document.querySelector('#buttonB')
+        closebut.onclick = hid_con;
+
+        function show_con(){
+
+            document.querySelector('#content').style.display='block';
+            document.querySelector("#buttonA").style.display='none';
+        }
+        function hid_con(){
+            document.querySelector('#content').style.display='none';
+            document.querySelector("#buttonA").style.display='block';
+        }
+    </script>
+</body>
+</html>

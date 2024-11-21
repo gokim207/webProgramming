@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color:dodgerblue;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+
+        }
+        p{
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>책 읽기</h1>
+        <p id="passedTime"></p>
+    </div>
+
+    <script>
+        let now = new Date();
+        let start = new Date('1000-06-14');
+        
+        let toNow = now.getTime();
+        let toStart = start.getTime();
+
+        let passedTime = (toNow-toStart)/1000/60/60/24;
+        passedTime = Math.round(passedTime);
+
+        document.querySelector('#passedTime').innerHTML = passedTime+'일 연속으로 읽기 성공';
+    </script>
+</body>
+</html>

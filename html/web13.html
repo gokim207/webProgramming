@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1000px;
+            height: 1000px;
+            border: 0.5px solid black
+        }
+        .grd {
+            background: linear-gradient(to right,red,orange,yellow,green, blue, navy, purple, black);
+        }
+        .grd2{
+            background: radial-gradient(circle at 1% 1%, white 13%, skyblue,blue);
+            border-radius: 50%;
+        }
+        .grd3{
+            background: radial-gradient(circle closest-side, red, yellow);
+        }
+        .grd4{
+            background: radial-gradient(circle farthest-side, red, yellow);
+        }
+        .grd5{
+            background: radial-gradient(circle closest-corner, red, yellow);
+        }
+        .grd6{
+            background: radial-gradient(circle farthest-corner, red, yellow);
+        }
+        .grd7{
+            background: repeating-linear-gradient(to bottom,yellow,  yellow 10%, red 10%, red 20%, yellow 20%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box grd"></div><br>
+    <div class="box grd2"></div><br>
+    <div class="box grd3"></div><br>
+    <div class="box grd4"></div><br>
+    <div class="box grd5"></div><br>
+    <div class="box grd6"></div><br>
+    <div class="box grd7"></div><br>
+</body>
+</html>

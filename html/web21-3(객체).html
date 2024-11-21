@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let car = {
+            make : 'kia',
+            year : 2015,
+            start : function() {
+                document.write('Engine started <br>');
+            }
+        };
+
+        document.write(car.make,'<br>');
+        car.start();
+
+        car.make = 'saesong';
+        document.write(car.make,'<br>');
+
+        document.write(car['make'],'<br>');
+
+        car['make'] = 'hyundia';
+        car.start=function() {
+            document.write('electric started <br>');
+        }
+        car.start();
+
+        let arr=['apple','saesong','ng'];
+
+        for(let index in arr){
+            document.writeln(index)
+        }
+        document.write('<br>');
+        for(let index of arr) {
+            document.writeln(index);
+        }
+        document.write('<br>');
+
+        function sumNum(){
+            document.write(3+4,'<br>');
+        }
+        sumNum();
+    </script>
+</body>
+</html>

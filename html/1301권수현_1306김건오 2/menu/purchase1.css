@@ -1,0 +1,85 @@
+img {
+    position: relative;
+    width: 400px;
+    height:500px;
+}
+.img{
+    position: absolute;
+    left:150px;
+    top:150px;
+}
+h1{
+    font-weight: bold;
+    
+}
+.goods{
+    position: absolute;
+    left:700px;
+    top:140px;
+}
+.star{
+    font-size: x-large;
+}
+
+.price_box{
+    height:100px;
+    width: 700px;
+    border-top:1px solid black;
+    position: absolute;
+    left:700px;
+    top:280px;
+    /* text-decoration: overline; */
+}
+.price{
+    font-size: 35px;
+    font-family:Tahoma;
+    position: absolute;
+    top:30px;
+}
+.deliver{
+    width:700px;
+    position: absolute;
+    left:700px;
+    border-top:1px solid rgba(0, 0, 0, 0.147);
+    top:400px;
+    font-weight: bold;
+}
+
+.deliver2{
+    position: absolute;
+    top:20px;
+}
+
+.deliver3{
+    position: absolute;
+    top:40px;
+}
+
+#container {
+    width: 1700px;
+    margin: 0 auto;
+    /* border: 1px solid #ff0000; */
+}
+
+#header{
+    /* width: 1200px; */
+    height:70px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.logo{
+    width: 100px;
+    height:100px
+}
+
+a:visited{
+    color:black;
+    text-decoration: none;
+}
+
+a:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin:10px;
+       }
+    
+    .box{
+        display:inline-grid;
+        width:250px;
+        height:300px;
+        border:1px solid black;
+        box-shadow: 1px 1px 1px 1px;
+        background-color: white;
+    }
+    img{
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+    </style>
+
+</head>
+<body>
+    <h1 id="heading">상품 목록</h1>
+    <div id="wrap">
+        <div class="box">
+            <h2>사진 제목</h1>
+            <img src="/cup/cup-1.jpg">
+            <p>사진 설명</p>
+        </div>
+        <div class="box">
+            <h2>사진 제목</h1>
+            <img src="/cup/cup-2.jpg">
+            <p>사진 설명</p>
+        </div>
+        <div class="box">
+            <h2>사진 제목</h1>
+            <img src="/cup/cup-3.jpg">
+            <p>사진 설명</p>
+        </div>
+        <div class="box">
+            <h2>사진 제목</h1>
+            <img src="/cup/cup-4.jpg">
+            <p>사진 설명</p>
+        </div>
+        <div class="box">
+            <h2>사진 제목</h1>
+            <img src="/cup/cup-5.jpg">
+            <p>사진 설명</p>
+        </div>
+        <div class="box">
+            <h2>사진 제목</h1>
+            <img src="/cup/cup-6.jpg">
+            <p>사진 설명</p>
+        </div>
+        <div class="box">
+            <h2>사진 제목</h1>
+            <img src="/cup/cup-7.jpg">
+            <p>사진 설명</p>
+        </div>
+        <div class="box">
+            <h2>사진 제목</h1>
+            <img src="/cup/cup-8.jpg">
+            <p>사진 설명</p>
+        </div>
+    </div>
+    <script src="html/web19-2.js"></script>
+    <!-- <script>
+        var heading = document.querySelector('#heading');
+        heading.onclick = function () {
+            heading.style.color = "red";
+        }
+    </script> -->
+    <script>
+        //alert("상품 주문 페이지 입니다.");
+        //var re = confirm("상품을 주문하시겠습니까?");
+        var name = prompt("어떤 상품을 주문하시겠습니까?", "컵1");
+    </script>
+</body>
+</html>

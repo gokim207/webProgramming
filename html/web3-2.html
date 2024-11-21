@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>레드향 주문</h1>
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ol type="1">
+                <li><label for="u_id">아이디(6자 이상) &nbsp;<input type="text" autofocus required id="u_id" value="a"></label><br><br></li>
+                <li></li><label for="u_pw">패스워드(8자 이상) &nbsp;<input type="password" id="u_pw"></label> <br><br></li>
+                <li></li><label for="u_adress">주소지 <input type="text" readonly id="u_adress"></label> <br><br></li>
+                <li></li><label for="u_email">이메일<input type="email" placeholder="@를 입력해주새요" id="u_email"></label></li>
+            </ol>    
+            </fieldset><br>
+
+        <fieldset>
+            <legend>상품 주문</legend>
+            <p>상품을 선택해주세요</p>
+            <label><input type="checkbox" checked value="home3">가정용 3kg<input type="number" min="0" max="10" value="1" ></label>
+            <label><input type="checkbox" value="home5">가정용 5kg<input type="range" min="0" max="10" value="0"></label>
+            <label><input type="checkbox" value="gift3">선물용 3kg<input type="number" min="0" max="10" value="0"></label>
+            <label><input type="checkbox" value="gift5">선물용 5kg<input type="number" min="0" max="10" value="0"></label>
+            <p>선물 포장 여부</p>
+            <label><input type="radio" name ="gift" value="wrap"> 포장</label>
+            <label><input type="radio" name ="gift" value="no_wrap"> 포장 안함</label>
+            <p>배송일</p>
+            <input type="datetime-local">
+            <p>메모</p>
+            <textarea cols="100" rows="5"></textarea>
+        </fieldset><br>
+        <button>ddd</button>
+
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+        <!-- <input type="image" src="images/KakaoTalk_Image_2024-03-19-10-54-31.jpeg"> -->
+        <br><input type="button" onclick="window.open('https://www.youtube.com/watch?v=8ybW48rKBME')" value="유의사항">
+        <br><input type="button" onclick="window.open('https://www.youtube.com/watch?v=8ybW48rKBME')" value="유의?사항">
+        <br><input type="file">
+        <br>
+        <select>
+            <option value="JG">제주</option>
+            <option value="DG" selected>대구</option>
+            <option value="PH">포항</option>
+            <option value="SO">서울</option>
+        </select>
+        <br>
+
+        <datalist>
+            <option value="JG">제주</option>
+        </datalist>
+    </form>
+</body>
+</html>

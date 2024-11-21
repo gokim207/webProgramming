@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 100px;
+            border: 5px solid black;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 5px 5px gray inset;
+            border-style: hidden;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 100px;
+            border: 20px ridge white;
+            box-sizing: content-box;
+            box-shadow: -3px -3px 5px 5px gray;
+            /*border-style: inset;*/
+        }
+
+        .box3 {
+            width: 400px;
+            height: 100px;
+            border: 10px groove white;
+            box-sizing: content-box;
+           /*border-style: inset;*/ 
+        }
+
+        .box4 {
+            width: 400px;
+            height: 100px;
+            border: solid black;
+            border-width: thin thick medium;
+            border-color: red; 
+            border-radius: 25px;
+            margin: 10px 20px 30px 40px;
+        }
+
+        .box5 {
+            width: 400px;
+            height: 100px;
+            border:  solid black;
+            border-width: 1px 2px 3px 4px; 
+            border-top-color: blue;
+            border-top-left-radius: 25px;
+            margin: 50px auto;
+            padding: 30px;
+        }
+
+        .box6 {
+            width: 1000px;
+            height: 1000px;
+            border: medium solid black; 
+            border-left-color: red;
+            border-right-color: blue;
+            border-radius: 50%;
+            margin: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="/images/top.jpg" class="box6">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</body>
+</html>

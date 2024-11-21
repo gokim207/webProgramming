@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>Transform:translate</title>
+    <style>
+			#container {
+				width:800px;
+				height:200px;
+				margin:20px auto;
+			}
+			.origin {
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				float: left;
+				margin: 40px;
+                perspective: 200px;
+			}
+			.origin > div {				
+				width:100px;
+				height:100px;
+				background-color:orange;
+			}
+
+            #movex:hover{
+                transform: translateX(-50px);
+            }
+
+            #movey:hover{
+                transform: translateY(50px);
+            }
+            #movexy:hover{
+                transform: translate3D(50px,50px,50px);
+            }
+            #scalex:hover{
+                transform:scaleX(20);
+            }
+
+            #scaley:hover{
+                transform:scaleY(20);
+            }
+            #scalexy:hover{
+                transform:scale(10,10);
+            }
+            #rotate:hover{
+                transform: rotate(45deg);
+            }
+            img:hover{
+                transform: rotate(45deg) scale(0.001,0.001) translateX(50px);;
+            }
+            #rotate3D:hover{
+                transform: rotate3d(2,2,2,45deg);
+            }
+
+			#skewX:hover{
+				transform: skewX(89deg);
+			}
+			#skewY:hover{
+				transform: skewY(89deg);
+			}
+			#skewXY:hover{
+				transform: skew(89deg, 89deg);
+			}
+
+		</style>
+	</head>
+	<body>		
+		<div id="container">
+			<div class="origin">
+				<div id="movex"></div>		
+			</div>
+
+			<div class="origin">
+				<div id="movey"></div>	
+			</div>
+
+			<div class="origin">
+				<div id="movexy"></div>		
+			</div>
+
+            <div class="origin">
+				<div id="scalex"></div>		
+			</div>
+
+            <div class="origin">
+				<div id="scaley"></div>		
+			</div>
+
+            <div class="origin">
+				<div id="scalexy"></div>		
+			</div>
+
+            <div class="origin">
+				<div id="rotate"></div>		
+			</div>
+            <!-- <img src="/images/무빙맨.png"> -->
+            <div class="origin">
+				<div id="rotate3D"></div>		
+			</div>
+			<div class="origin">
+				<div id="skewX"></div>		
+			</div>
+			<div class="origin">
+				<div id="skewY"></div>		
+			</div>
+			<div class="origin">
+				<div id="skewXY"></div>		
+			</div>
+			
+		</div>
+	</body>
+</html>

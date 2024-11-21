@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px auto;
+        }
+        h1{
+            text-align: center;
+        }
+        li{
+            float:left;
+            margin:30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .sangpum1{
+            opacity: 0;
+            width: 300px;
+            height: 200px;
+            background-color:rgba(0, 0, 0,0.5);
+            text-align: center;
+            color:white;
+            padding-top: 10px;
+            position: absolute;
+            top:200px;
+            transition-property: all;
+            transition-duration: 1s;
+            font-size:larger;
+
+        }
+        li:hover .sangpum1{
+            transform: translateY(-200px);
+            opacity: 100;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>신상품 목록</h1>
+        <ul type="none">
+            <li>
+                <img src="/images/prod1.jpg">
+                <div class="sangpum1">
+                    <h2>상품 1</h2>
+                    <p>상품 1 설명 텍스트</p>
+                    <p>가격 : 123456원</p>
+                </div>
+            </li>
+            <li>
+                <img src="/images/prod2.jpg">
+                <div class="sangpum1">
+                    <h2>상품 2</h2>
+                    <p>상품 2 설명 텍스트</p>
+                    <p>가격 : -3000원</p>
+                </div>
+            </li>
+            <li>
+                <img src="/images/prod3.jpg">
+                <div class="sangpum1">
+                    <h2>상품 3</h2>
+                    <p>상품 3 설명 텍스트</p>
+                    <p>가격 : 7777777원</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin : 0 auto;
+            box-sizing: border-box;
+            width : 100%;
+            }
+        #wrap{
+            width:1200px;
+            margin:20px auto
+
+        }
+        #header{
+            height:200px;
+            border: 1px solid black;
+        }
+
+        #sidebar{
+            width: 30%;
+            height: 600px;
+            float : left;
+            border: 1px solid black;
+        }
+        #content{
+            width:70%;
+            float:left;
+            border: 1px solid black;
+        }
+        #footer{
+            height:200px;
+            clear:left;
+            border: 1px solid black;
+        }
+        .input{
+            width:500px;
+            height:50px;
+            border-radius: 30px;
+            margin:0 auto;
+        }
+        .input2{
+            border:3px solid rgb(55,192,55);
+            width:500px;
+            height:50px;
+            border-radius: 30px;
+            margin:0 auto;
+            padding-left:55px;
+            font-size: large;
+        }
+
+        .navigation{
+            width:600px;
+            margin:0 auto;
+        }
+        img{
+            text-align: center;
+            display: inline-block;
+            width:30px;
+            margin:10px;
+            box-shadow: 3px 3px 3px gray;
+        }
+        img:hover{
+            background-color: lightgray;
+        }
+
+        li{
+            text-align: center;
+            display: inline-block;
+            width: 80px;
+            height:20px;
+        }
+
+        .naver{
+            filter: invert(23%) sepia(72%) saturate(6354%) hue-rotate(109deg) brightness(97%) contrast(102%);            width:30px;
+            height:30px;
+            position:absolute;
+            left:500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <img src="/images/naver.png" class="naver" >
+            <div class="input">
+                <input type="search" class="input2" placeholder=" 검색어를 입력하세요">
+                <nav>
+                    <ul type="none">
+                        <li><img src="/images/mail.png"></li>
+                        <li><img src="/images/coffee-shop.png"></li>
+                        <li><img src="/images/blogging.png"></li>
+                        <li><img src="/images/shopping-cart.png"></li><br>
+                        <li><a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fmail.naver.com%2F">메일</li></a>
+                        <li><a href="https://section.cafe.naver.com/ca-fe/home">카페</li></a>
+                        <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0">블로그</li></a>
+                        <li><a href="https://shopping.naver.com/home">쇼핑</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <aside id="sidebar">
+            <h2>sidebar</h2>
+        </aside>
+        
+        <main id="contents">
+            <h2>contents</h2>
+        </main>
+        
+        <footer id="footer">
+            <h2>footer</h2>
+        <footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+#header{
+    /* width: 1200px; */
+    height:100px;
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: white;
+}
+
+#nav{
+    height: 70px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#container {
+    width: 1700px;
+    margin: auto;
+    /* border: 1px solid #ff0000; */
+}
+
+#article{
+    display: flex;
+    width: 1600px;
+    height:700px;
+    border:1px solid black;
+    /* text-align: center; */
+}
+
+.book{
+    width: 400px;
+    border:1px solid black;
+    
+}
+
+.data{
+    width: 400px;
+    border:1px solid black;
+    
+}
+
+.news{
+    width: 400px;
+    border:1px solid black;
+
+}
+
+.species{
+    width: 400px;
+    border:1px solid black;
+    
+}
+
+input{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    right:100px;
+    top:30px;
+}
+
+#footer{
+    background-color: gray;
+    color:whitesmoke;
+}
+
+.underbar{
+    display: flex;
+}
+
+.bars{
+    width: 200px;
+    float:left;
+}
+
+#logo{
+    width:100px;
+    height:100px;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.menubar {
+    display: flex;
+    /* margin: 10px; */
+    text-align: center;
+    font-weight: bold;
+    /* background-color:rgb(120, 214, 139); */
+}
+
+
+.menus {
+    width: 300px;
+    height: 70px;
+    /* border: 1px solid; */
+    margin-left: 10px;
+    margin: auto;
+    font-size:18px;
+}
+
+.menu{
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.menu:hover{
+    color :rgb(18, 70, 42);
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+a:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+.request{
+    font-size: larger;
+    position: absolute;
+    top:27px;
+    right:340px;
+    font-weight: bold;
+    color: gray;
+}
+
+.request:hover{
+    text-decoration: underline;
+}

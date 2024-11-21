@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table ,td{
+            border: 1px solid black;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- <table>
+
+        <tr>
+        <td>좌석1</td>
+        <td>좌석2</td>
+        <td>좌석3</td>
+        <td>좌석4</td>
+        <td>좌석5</td>
+        </tr>
+        
+        <tr>
+        <td>좌석6</td>
+        <td>좌석7</td>
+        <td>좌석8</td>
+        <td>좌석9</td>
+        <td>좌석10</td>
+        </tr>
+        
+        <tr>
+        <td>좌석11</td>
+        <td>좌석12</td>
+        <td>좌석13</td>
+        <td>좌석14</td>
+        <td>좌석15</td>
+        </tr>
+        
+        <tr>
+        <td>좌석16</td>
+        <td>좌석17</td>
+        <td>좌석18</td>
+        <td>좌석19</td>
+        <td>좌석20</td>
+        </tr>
+        
+    </table> -->
+    <script>
+        let row = 100
+        let cols = 100
+        let num =1
+        document.write("<table>");
+            for(i=0; i<row; i++) {
+                if(i%2==1){
+                    document.write('<tr class=yellow>')
+                }
+                else {
+                    document.write('<tr>');
+                }
+
+                for(j=0; j<cols; j++){
+                    document.write('<td>','좌석',num,'</td>');
+                    num += 1
+                }
+                document.write('</tr>');
+            }
+        document.write('</table>');
+    </script>
+</body>
+</html>

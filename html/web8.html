@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Moirai+One&display=swap'); 
+            .fs {
+            font-family: "Moirai One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: BMYEONSUNG-OTF;
+            src: url(local);
+        }
+        table{
+            font-family: ABMYEONSUNG-OTF;
+            caption-side: top;
+            border: 1px dashed black;
+            background-color: black;
+            width: 500px; height: 200px;
+            border-spacing: 50px;
+            border-collapse:collapse;
+        }
+
+        th, td {
+            border: 1px dashed wheat;
+            text-align: center;
+            vertical-align: top;
+        }
+        .th1{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption class="fs">시간표</caption>
+        <tr class="th1">
+        <th></th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+        </tr>
+
+        <tr>
+        <th class="th1">1교시</th>
+        <td>>국어</td>
+        <td>영어</td>
+        <td>수학</td>
+        <td>과학</td>
+        <td>웹기</td>
+        </tr>
+
+        <tr>
+        <th>2교시</th>
+        <td>국어</td>
+        <td>영어</td>
+        <td class="th1">수학</td>
+        <td>과학</td>
+        <td>프밍</td>
+        </tr>
+
+        <tr>
+        <th>3교시</th>
+        <td class="th1">체육</td>
+        <td>미술</td>
+        <td>프로</td>
+        <td class="th1">사회</td>
+        <td>진로</td>
+        </tr>
+
+        <tr>
+        <th>4교시</th>
+        <td>국어</td>
+        <td>영어</td>
+        <td>수학</td>
+        <td>과학</td>
+        <td class="th1">국어</td>
+        </tr>
+        </table>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            color:blue;
+        }
+        .textalign{
+            text-align: center;
+        }
+        .lineheight{
+            line-height: 2.0;
+        }
+        .textdecoration{
+            text-decoration: underline;
+        }
+        .texttransform{
+            text-transform: uppercase;
+        }
+        .boxa{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin: 50px 50px 50px;
+        }
+        .position{
+            width: 500px;
+            height:100px;
+            border: 1px solid black;
+            position: absolute;
+            left:100px;
+        }
+        .repeat{
+            width: 500px;
+            height: 100px;
+            background-image: url('/images/eye.jpeg');
+            background-repeat: repeat-x;
+        }
+        .gradient{
+            width: 500px;
+            height: 100px;
+            background: linear-gradient(to right,red,orange,yellow,green, blue, navy, purple, black);
+        }
+        .hover{
+            width: 500px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .hover:hover{
+            background-color: blue;
+        }
+        .transform{
+            width: 500px;
+            height: 100px;
+            border:1px solid black;
+        }
+        .transform:hover{
+            transform: rotate(45deg);
+        }
+        .flex{
+            width: 500px;
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        .grid{
+            width: 500px;
+            height: 100px;
+            border: 1px solid black;
+
+        }
+        #wrap{
+            width: 700px;
+            display : grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+            grid-template-areas: 
+            "box box box"
+            "box1 box2 box2"
+            "box1 box2 box2";
+        }
+        .box{
+            background-color: red;
+            grid-column: 1/3;
+            grid-area: box;
+        }
+        .box1{
+            background-color: blue;
+            grid-row: 2/3;
+            grid-area: box1;
+        }
+        .box2{
+            background-color: yellow;
+            grid-column: 3/4;
+            grid-area:box2
+        }
+    </style>
+</head>
+<body>
+    <h1 class="textalign">aaa(h1+text-align)</h1>
+    <h2 class="color">aaa(h2+color)</h2>
+    <p class="lineheight">aaa(p+line-height)</p>
+    <blockquote class="textdecoration">aaa(blockquote+text-decoration)</blockquote>
+    <b class="texttransform">aaa(b+text-transform)</b><br>
+    <strong>aaa(strong)</strong><br>
+    <i>aaa(i)</i><br>
+    <em>aaa(em)</em><br>
+    <br>
+
+    <ol>
+        <li>aaa(ol)</li>
+        <li>bbb</li>
+    </ol>
+
+    <ul>
+        <li>aaa(ul)</li>
+        <li>bbb</li>
+    </ul>
+    
+    <dl>
+        <li>aaa(dl)</li>
+        <li>bbb</li>
+    </dl>
+    <br>
+
+    <table border="1">
+        <caption>text(caption)</caption>
+        <tr>
+            <th>aaa(th)</th>
+            <td>aaa(td)</td>
+        </tr>
+    </table>
+    <br>
+
+    <img src="/images/bul1.jpg">
+    <img src="/images/bul1.jp" alt="aaa(alt)">
+    <br>
+
+    <object data="/images/bul2.jpg" width="90"></object>
+    <embed src="/images/bul2.jpg" width="100">
+    <!-- <audio src="/data/다람쥐.mp4"></audio> 주석 -->
+    <video src="/data/다람쥐.mp4" width="400"></video>
+    <br>
+
+    <a href="https://youtu.be/FibB5CARo6E?si=oZ4zzks4om1NTAWs">aaa(hyperlink)</a>
+    <a href="/html/web100.html" target="_blank">aaa(target)</a>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>aaa(legend)</legend>
+            
+            <label>bbb(label)<input placeholder="dddddd(placeholder)" required autofocus></label><br>
+            
+            <textarea cols="40" rows="4">ccc(textarea)</textarea><br>
+            
+            <select>
+                <option>aaa(option)</option>
+                <option selected>bbb</option>
+                <option>bbb</option>
+                <option>bbb</option>
+                <option>bbb</option>
+                <option>bbb</option>
+                <option>bbb</option>
+                <option>bbb</option>
+                <option>bbb</option>
+                <option>bbb</option>
+            </select>
+
+            <datalist>
+                <option>aaa(data-option)</option>
+                <option>bbb(data-option)</option>
+            </datalist><br>
+            <input type="checkbox" checked>aaa(input-checkbox)
+            <input type="checkbox">aaa
+            <br>
+
+            <input type="radio" name="text" checked>aaa(input-radio)
+            <input type="radio" name="text">aaa
+        </fieldset>
+    </form><br>
+    <div class="boxa">(border-radius+margin)</div><br>
+    <div class="position">(position)</div><br>
+    <div class="repeat">(background-repeat)</div><br>
+    <div class="gradient">(liner-gradient)</div><br>
+    <div class="hover">(hover)</div><br>
+    <div class="transform">(transform)</div><br>
+
+    <div class="flex">(flex-box+align-items)</div><br>
+
+    <div id="wrap">
+        <div class="box">box1</div>
+        <div class="box1">box2</div>
+        <div class="box2">box3</div>
+    </div>
+
+    <script>
+        //alert('(alert)')
+        //var confirm = confirm('confirm')
+        document.write('(document.wirte)')
+        console.log('(console.log)')
+
+        let result = (a,b) => {
+            return a+b
+        }
+        document.write(result(10,20))
+    </script>
+</body>
+</html>
